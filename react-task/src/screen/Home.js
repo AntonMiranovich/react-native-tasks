@@ -7,6 +7,8 @@ export default function Home({ navigation }) {
             <Text onPress={() => navigation.navigate('Task2')}>Перейти к 2 задаче</Text>
             <Text onPress={() => navigation.navigate('Task3')}>Перейти к 3 задаче</Text>
             <Text onPress={() => navigation.navigate('Task4')}>Перейти к 4 задаче</Text>
+            <Text onPress={() => navigation.navigate('Task5')}>Перейти к 5 задаче</Text>
+            <Text onPress={() => navigation.navigate('Task6')}>Перейти к 6 задаче</Text>
         </View>
     )
 }
