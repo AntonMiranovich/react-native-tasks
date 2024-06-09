@@ -7,6 +7,8 @@ import Task3 from './src/screen/Task3/Task3'
 import Task4 from './src/screen/Task4/Task4'
 import Task5 from './src/screen/Task5/Tassk5'
 import Task6 from './src/screen/Task6/Task6'
+import Task7 from './src/screen/Task7/Task7'
+import Task8 from './src/screen/Task8/Task8'
 
 const Stack = createStackNavigator()
 
@@ -21,6 +23,8 @@ export default function App() {
         <Stack.Screen name='Task4' component={Task4} />
         <Stack.Screen name='Task5' component={Task5} />
         <Stack.Screen name='Task6' component={Task6} />
+        <Stack.Screen name='Task7' component={Task7} />
+        <Stack.Screen name='Task8' component={Task8} />
       </Stack.Navigator>
     </NavigationContainer>
   )

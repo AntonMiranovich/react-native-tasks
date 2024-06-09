@@ -13,7 +13,6 @@ export default function Task5({ navigation }) {
         try {
             if (!/^[A-z0-9\.\+\_\-]+@[a-z\.]+\.{1}[a-z]{2,4}$/gm.test(date.current.email)) throw new Error('Email is invalid')
             if (date.current.pass.length < 8) throw new Error('The password is too short')
-
             console.log(`Success`);
         } catch (error) {
             console.log(error.message);
@@ -28,8 +27,8 @@ export default function Task5({ navigation }) {
                 случае успешного ввода отобразите в console.log сообщение "success".</Text>
 
 
-            <TextInput onChangeText={(value) => isInp('email', value)} style={styles.inp} placeholder='Введите Email' />
-            <TextInput onChangeText={(value) => isInp('pass', value)} style={styles.inp} placeholder='Введите Пороль' />
+            <TextInput onChangeText={(value) => isInp('email', value)} style={{ border: '1px solid black' }} placeholder='Введите Email' />
+            <TextInput onChangeText={(value) => isInp('pass', value)} style={{ border: '1px solid black' }} placeholder='Введите Пороль' />
             <Button onPress={checkDate} title='Регистрация' />
         </View>
     )
